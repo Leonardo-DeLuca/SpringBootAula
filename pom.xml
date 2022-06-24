@@ -33,27 +33,31 @@
             <version>2.7.0</version>
         </dependency>
 
-<!--        &lt;!&ndash;Starter Data&ndash;&gt;
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+        </dependency>
+
+        <!--Starter Data-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
             <version>2.7.0</version>
         </dependency>
 
-        &lt;!&ndash;Starter Security&ndash;&gt;
+        <!--Starter Security-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
             <version>2.7.0</version>
         </dependency>
 
-        &lt;!&ndash;Starter test&ndash;&gt;
+        <!--Starter test-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <version>2.7.0</version>
         </dependency>
-        -->
     </dependencies>
 
     <build>
