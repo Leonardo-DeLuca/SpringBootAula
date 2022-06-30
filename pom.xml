@@ -45,7 +45,7 @@
             <version>2.7.0</version>
         </dependency>
 
-        <!--Starter Security-->
+        <!--Starter Security login e senha-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
