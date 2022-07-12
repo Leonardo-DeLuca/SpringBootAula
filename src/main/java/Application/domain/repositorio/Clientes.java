@@ -25,7 +25,7 @@ public class Clientes {
         return cliente;
     }
 
-    public liente atualizar(Cliente cliente){
+    public Cliente atualizar(Cliente cliente){
         jdbcTemplate.update(UPDATE, new Object[]{cliente.getNome(), cliente.getId()});
         return cliente;
     }
