@@ -1,3 +1,5 @@
+--foi renomeado de data para meu_schema pra substituir o jdbctemplate por jpa
+
 CREATE TABLE CLIENTE (
     ID INTEGER PRIMARY KEY AUTO_INCREMENT,
     NOME VARCHAR(100)
