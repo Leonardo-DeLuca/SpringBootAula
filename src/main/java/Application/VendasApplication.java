@@ -19,38 +19,42 @@ public class VendasApplication {
             return args -> {
                 System.out.println("Salvando Clientes.");
                 Cliente cliente = new Cliente("Leo");
-                clientes.salvar(cliente);
+                clientes.save(cliente);
 
                 Cliente cliente2 = new Cliente("Outro");
-                clientes.salvar(cliente2);
+                clientes.save(cliente2);
 
-                List<Cliente> todosClientes = clientes.obterTodos();
+                boolean existe = clientes.existsByNome("Leo");
+                System.out.println("Existe um cliente com o nome? " + existe);
+
+/*                List<Cliente> todosClientes = clientes.findAll();
                 todosClientes.forEach(System.out::println);
 
-/*              System.out.println("Atualizando Clientes");
+              System.out.println("Atualizando Clientes");
                 todosClientes.forEach(c -> {
                     c.setNome(c.getNome() + " atualizado");
-                    clientes.atualizar(c);
+                    clientes.save(c);
                 });
 
-                todosClientes = clientes.obterTodos();
+                todosClientes = clientes.findAll();
                 todosClientes.forEach(System.out::println);
 
                 System.out.println("Buscando clientes");
-                clientes.buscarPorNome("Ou").forEach(System.out::println);*/
+                clientes.findByNomeLike("Ou").forEach(System.out::println);
 
-//                System.out.println("Deletando clientes");
-//                clientes.obterTodos().forEach(c -> {
-//                    clientes.deletar(c);
-//                });
+                System.out.println("Deletando clientes");
+                clientes.findAll().forEach(c -> {
+                    clientes.delete(c);
+                });
 
-/*                todosClientes = clientes.obterTodos();
+                todosClientes = clientes.findAll();
                 if (todosClientes.isEmpty()){
                     System.out.println("Nenhum Cliente Encontrado");
                 }
                 else {
                     todosClientes.forEach(System.out::println);
-                }*/
+                }
+                */
             };
         }
 
