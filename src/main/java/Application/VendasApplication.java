@@ -1,8 +1,7 @@
 package Application;
 
 import Application.domain.entity.Cliente;
-import Application.domain.repositorio.Clientes;
-import org.h2.command.Command;
+import Application.domain.repository.Clientes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
